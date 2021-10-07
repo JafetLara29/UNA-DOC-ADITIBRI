@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 70%;
+    background-color: black;
+}
+
+header img{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 100%;
+}
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+nav .item {
+    list-style: none;
+    float: left;
+    width: 11.1%;
+    align-items: center;
+    
+}
+nav .item a {
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-align: center;
+    padding: 7px 16px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+nav .desple{
+    display: none;
+    position: relative;
+} 
+
+nav .item:hover .desple{
+    display: block;
+} 
+nav .item .desple {
+    position: absolute;
+    width: 20%;
+    text-align: left;
+    background-color: rgb(251, 253, 255);
+} 
+nav .item .desple li a{
+    text-align: left;
+    color: black;
+} 
+nav .item .desple li a:hover{
+    background-color: gray;
+}
+.slider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../Images/fondo_div_noticias.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.slider ul{
+    display: flex;
+    animation: change 20s infinite alternate linear;
+    width: 300%;
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+.slider img{
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+}
+/* Para controlar el efecto de pasado de imagenes */
+@keyframes change{
+
+    0%{margin-left: 0;}
+    30%{margin-left: 0;}
+
+    35%{margin-left: -100%;}
+    60%{margin-left: -100%;}
+
+    65%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+footer ul{
+    margin-top: 5px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+footer li{
+    display: inline;
+    float: left;
+    list-style: none;
+    width: 100%;
+}
+footer li .p_title{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 13px 16px;
+}
+footer li .p_item{
+    color: white;
+    text-align: center;
+    padding: 13px 16px;
+}
+footer li img{
+    width:100%;
+    height: 100%;
+}
+footer li a{
+    color: white;
+    text-decoration: none;
+
+}
